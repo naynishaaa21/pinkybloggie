@@ -1,0 +1,982 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- HAY,DON'T COPY MY BLOG OR YOUR BLOG WILL TAKEDOWNED -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="<$BlogLanguageDirection$>">
+  <head>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      /***********************************************
+      * Scroll To Top Control script- © Dynamic Drive DHTML code library(www.dynamicdrive.com)*
+      ***********************************************/var scrolltotop={
+      setting: {startline:100, scrollto: 0, scrollduration:1000, fadeduration:[500, 100]},
+      controlHTML: '<img src="http://2.bp.blogspot.com/-30IOk7U2NG4/VKF4HD_XvrI/AAAAAAAADgs/TM0YFUzf84Y/s1600/back%2Bto%2Btop%2B3.png" />',
+      controlattrs: {offsetx:5, offsety:5},
+      anchorkeyword: '#top',
+      state: {isvisible:false, shouldvisible:false},
+      scrollup:function(){
+      if (!this.cssfixedsupport)
+      this.$control.css({opacity:0})
+      var dest=isNaN(this.setting.scrollto)? this.setting.scrollto : parseInt(this.setting.scrollto)
+      if (typeof dest=="string" && jQuery('#'+dest).length==1)
+      dest=jQuery('#'+dest).offset().top
+      else
+      dest=0
+      this.$body.animate({scrollTop: dest}, this.setting.scrollduration);
+      },
+      keepfixed:function(){
+      var $window=jQuery(window)
+      var controlx=$window.scrollLeft() + $window.width() - this.$control.width() - this.controlattrs.offsetx
+      var controly=$window.scrollTop() + $window.height() - this.$control.height() - this.controlattrs.offsety
+      this.$control.css({left:controlx+'px', top:controly+'px'})
+      },
+      togglecontrol:function(){
+      var scrolltop=jQuery(window).scrollTop()
+      if (!this.cssfixedsupport)
+      this.keepfixed()
+      this.state.shouldvisible=(scrolltop>=this.setting.startline)? true : false
+      if (this.state.shouldvisible && !this.state.isvisible){
+      this.$control.stop().animate({opacity:1}, this.setting.fadeduration[0])
+      this.state.isvisible=true
+      }
+      else if (this.state.shouldvisible==false && this.state.isvisible){
+      this.$control.stop().animate({opacity:0}, this.setting.fadeduration[1])
+      this.state.isvisible=false
+      }
+      },
+      init:function(){
+      jQuery(document).ready(function($){
+      var mainobj=scrolltotop
+      var iebrws=document.all
+      mainobj.cssfixedsupport=!iebrws || iebrws && document.compatMode=="CSS1Compat" && window.XMLHttpRequest
+      mainobj.$body=(window.opera)? (document.compatMode=="CSS1Compat"? $('html') : $('body')) : $('html,body')
+      mainobj.$control=$('<div id="topcontrol">'+mainobj.controlHTML+'</div>')
+      .css({position:mainobj.cssfixedsupport? 'fixed' : 'absolute', bottom:mainobj.controlattrs.offsety, right:mainobj.controlattrs.offsetx, opacity:0, cursor:'pointer'})
+      .click(function(){mainobj.scrollup(); return false})
+      .appendTo('body')
+      if (document.all && !window.XMLHttpRequest && mainobj.$control.text()!='')
+      mainobj.$control.css({width:mainobj.$control.width()})
+      mainobj.togglecontrol()
+      $('a[href="' + mainobj.anchorkeyword +'"]').click(function(){
+      mainobj.scrollup()
+      return false
+      })
+      $(window).bind('scroll resize', function(e){
+      mainobj.togglecontrol()
+      })
+      })
+      }
+      }
+      scrolltotop.init()
+    </script>
+    <title><$BlogPageTitle$></title>
+    <$BlogMetaData$>
+    <style type="text/css">
+      /*
+      -----------------------------------------------
+      Skin info - Please don't remove -
+      Name:     Pinky Bloggie
+      Date:     29 May 2021
+      By  :     Nayla Danish K (naylaka.blogspot.com)
+      Base:     Rounders (Blogger.com)
+      ----------------------------------------------- */
+      body {
+      background-image:url('http://2.bp.blogspot.com/-OCgRpsLgOI4/T__7XP91GuI/AAAAAAAAI68/XHEd2LAdpD8/s1600/pink.gif');
+      margin:0;
+      padding:20px 10px;
+      text-align:center;
+      font:x-small/1.5em "Trebuchet MS",Verdana,Arial,Sans-serif;
+      color:#333;
+      font-size/* */:/**/small;
+      font-size: /**/small;
+      }
+      * {cursor: url(https://ani.cursors-4u.net/symbols/sym-9/sym825.ani), url(https://ani.cursors-4u.net/symbols/sym-9/sym825.png), auto !important;}
+      ::selection {
+      color: #e35da0;
+      text-shadow: 0px 1px 5px #ff99cc;
+      }
+      /* Page Structure
+      ----------------------------------------------- */
+      /* The images which help create rounded corners depend on the 
+      following widths and measurements. If you want to change 
+      these measurements, the images will also need to change.
+      */
+      @media all {
+      #content {
+      width:840px;
+      margin:0 auto;
+      text-align:left;
+      }
+      #main {
+      width:585px;
+      float:left;
+      background:#fff;
+      border: dashed 2px #fc90c6;
+      border-radius: 6px;
+      margin:15px 0 0;
+      padding:0 0 10px;
+      color:#000;
+      font-size:97%;
+      line-height:1.5em;
+      }
+      #main2 {
+      float:left;
+      width:100%;
+      padding:10px 0 0;
+      }
+      #main3 {
+      padding:0;
+      }
+      #sidebar {
+      width:240px;
+      float:right;
+      margin:15px 0 0;
+      font-size:97%;
+      line-height:1.5em;
+      }
+      }
+      @media handheld {
+      #content {
+      width:90%;
+      }
+      #main {
+      width:100%;
+      float:none;
+      background:#fff;
+      }
+      #main2 {
+      float:none;
+      background:none;
+      }
+      #main3 {
+      background:none;
+      padding:0;
+      }
+      #sidebar {
+      width:100%;
+      float:none;
+      }
+      }
+      /* Links
+      ----------------------------------------------- */
+      a:link {
+      color:#fc03d3;
+      text-decoration:none;
+      transition:0.8s;
+      }
+      a:visited {
+      color:#fc03d3;
+      }
+      a:hover {
+      color:#fc03ad;
+      text-shadow: 0 0 4px pink;
+      cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1027.ani), url(https://cur.cursors-4u.net/nature/nat-11/nat1027.gif), auto !important;
+      }
+      a img {
+      border-width:0;
+      }
+      /* Blog Header
+      ----------------------------------------------- */
+      @media all {
+      #header {
+      background:#fff;
+      margin:0 0 0;
+      padding:8px 0 0;
+      color:#aaa;
+      border: solid 2px #ffd4e9;
+      border-radius: 8px;
+      }
+      #header div {
+      padding:0 15px 8px;
+      }
+      }
+      @media handheld {
+      #header {
+      background:#456;
+      }
+      #header div {
+      background:none;
+      }
+      }
+      #blog-title {
+      margin:0;
+      padding:10px 30px 5px;
+      font-size:200%;
+      line-height:1.2em;
+      }
+      #blog-title a {
+      text-decoration:none;
+      color:#fff;
+      }
+      #description {
+      display:none;
+      margin:0;
+      padding:5px 30px 10px;
+      font-size:94%;
+      line-height:1.5em;
+      }
+      /* Posts
+      ----------------------------------------------- */
+      .date-header {
+      margin:0 28px 0 43px;
+      font-size:85%;
+      font-family:Schoolbell;
+      line-height:2em;
+      text-transform:uppercase;
+      letter-spacing:.2em;
+      color:#e384b3;
+      }
+      .post,.page {
+      margin:.3em 0 25px;
+      padding:0 13px;
+      border-width:1px 0;
+      }
+      .post-title,.sometitle {
+      border-top: 2px solid mistyrose;
+      border-left: 2px solid mistyrose;
+      border-right: 2px solid mistyrose;
+      border-bottom: 6px solid mistyrose;
+      border-radius: 10px 10px 0px 0px;
+      margin:0;
+      font-size:135%;
+      font-family:Schoolbell;
+      text-transform:capitalize;
+      letter-spacing:1px;
+      line-height:1.5em;
+      background:url("http://media.tumblr.com/tumblr_mdns6uP6zZ1qdlkyg.gif") no-repeat 4px 8px;
+      display:block;
+      padding:5px 14px 5px 29px;
+      color:#333;
+      }
+      a.title-link, .post-title strong {
+      text-decoration:none;
+      display:block;
+      }
+      a.title-link:hover {
+      background-color:#ded;
+      color:#000;
+      }
+      .post-body,.post-page {
+      border:1px solid mistyrose;
+      border-width:0 1px 1px;
+      padding:10px 14px 1px 14px;
+      font-size:13px;
+      font-family:Short Stack;
+      }
+      html>body .post-body {
+      border-bottom-width:3px;
+      }
+      html>body .post-page {
+      border-bottom-width:0;
+      }
+      .post p {
+      margin:0 0 .75em;
+      }
+      p.post-footer {
+      margin:0;
+      padding:2px 14px 2px 14px;
+      border-right: solid 1px mistyrose;
+      border-left: solid 1px mistyrose;
+      font-size:100%;
+      line-height:1.5em;
+      color:#666;
+      text-align:right;
+      font-family:Schoolbell;
+      }
+      .post-footer a{
+      color:#f0a8b4;
+      }
+      html>body p.post-footer {
+      border-bottom-color:transparent;
+      }
+      p.post-footer em {
+      display:block;
+      float:left;
+      text-align:left;
+      font-style:normal;
+      }
+      a.comment-link {
+      /* IE5.0/Win doesn't apply padding to inline elements,
+      so we hide these two declarations from it */
+      padding-left:14px;
+      }
+      html>body a.comment-link {
+      /* Respecified, for IE5/Mac's benefit */
+      padding-left:14px;
+      }
+      .post img,.page img {
+      margin:0 0 5px 0;
+      border:solid 5px #fc90c6;
+      border-radius:5px;
+      transition:0.5s;
+      }
+      .post img:hover,.page img:hover {
+      border-radius:10px;
+      opacity:0.8;
+      }
+      blockquote {
+      margin: 1em 20px;
+      border-radius:15px;
+      padding:10px;background:#ffffff;
+      border:3px solid #ffd9d9;
+      max-width:485px;
+      max-height:85px;
+      overflow:auto;
+      font:12px;
+      background-image:url(https://1.bp.blogspot.com/-01WA7bv4nHE/YLMciV2qhZI/AAAAAAAADFI/CoekkZKXRi0oQAO5Wyl3En_y0xVD2ct2wCLcBGAsYHQ/s0/pinktitik.gif);
+      -webkit-transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      -ms-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+      word-wrap: break-word;
+      }
+      .post blockquote p {
+      margin:.5em 0;
+      }
+      blockquote:hover {
+      -webkit-box-shadow: 0px 0px 8px #fc90c6;
+      -moz-box-shadow: 0px 0px 8px #fc90c6;
+      box-shadow: 0px 0px 8px #fc90c6;
+      }
+      .post-body ul,.post-page ul{
+      list-style-image:url('https://64.media.tumblr.com/a8f18566e67105f75d15c72aae28906f/ab60d91eec9fa536-d3/s75x75_c1/5d8b5717845b50a4e98b13ecfcbfd797d540f522.gifv');
+      }
+      /* Comments
+      ----------------------------------------------- */
+      #comments {
+      margin:-25px 13px 0;
+      border-width:0 1px 1px;
+      padding:20px 0 15px 0;
+      }
+      .comment-icon blogger-comment-icon{display:none}
+      span.comment-icon{display:none}
+      #comments h4 {
+      border-top: 2px solid mistyrose;
+      border-left: 2px solid mistyrose;
+      border-right: 2px solid mistyrose;
+      border-bottom: 6px solid mistyrose;
+      border-radius: 6px 6px 0px 0px;
+      margin:0 0 10px;
+      text-align: center;
+      font-size: 125%;
+      font-family: Schoolbell;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.5em;
+      background: url(https://1.bp.blogspot.com/-01WA7bv4nHE/YLMciV2qhZI/AAAAAAAADFI/CoekkZKXRi0oQAO5Wyl3En_y0xVD2ct2wCLcBGAsYHQ/s0/pinktitik.gif);
+      display: block;
+      padding: 5px 10px 5px 19px;
+      color: #333;
+      }
+      #comments-block {
+      margin:0 15px 0 9px;
+      }
+      .comment-data {
+      background:url("http://media.tumblr.com/tumblr_m4i7xdBwVV1qdlkyg.gif") no-repeat 1px 0;
+      margin:.5em 0;
+      padding:0 0 0 20px;
+      color:#666;
+      }
+      .comment-poster {
+      font-weight:bold;
+      }
+      .comment-body {
+      margin:0 0 1.25em;
+      padding:0 0 0 20px;
+      }
+      .comment-body p {
+      margin:0 0 .5em;
+      background:#fff url("https://1.bp.blogspot.com/-01WA7bv4nHE/YLMciV2qhZI/AAAAAAAADFI/CoekkZKXRi0oQAO5Wyl3En_y0xVD2ct2wCLcBGAsYHQ/s0/pinktitik.gif");
+      padding:5px;
+      border-left:20px solid pink;
+      border-right:2px solid pink;
+      border-top:2px solid pink;
+      border-bottom:2px solid pink;  
+      border-radius:4px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      }
+      .comment-body p:hover {
+      border-left:2px solid pink;
+      border-right:20px solid pink;
+      }
+      .comment-timestamp {
+      margin:0 0 .5em;
+      padding:0 0 .75em 20px;
+      color:#666;
+      }
+      .comment-timestamp a:link {
+      color:#666;
+      }
+      .deleted-comment {
+      font-style:italic;
+      color:gray;
+      }
+      .paging-control-container {
+      float: right;
+      margin: 0px 6px 0px 0px;
+      font-size: 80%;
+      }
+      .unneeded-paging-control {
+      visibility: hidden;
+      }
+      /* Avatar profil
+      ----------------------------------------------- */
+      .avatara img {
+      width:100px;
+      height:100px;
+      border-radius:50%;
+      border:4px dashed #fc90c6;
+      -webkit-transition: all 0.8s ease-out;
+      -moz-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out;
+      }
+      .avatara img:hover{
+      border-radius:50%;
+      transform: rotate(360deg) ;
+      -webkit-transform: rotate(360deg) ;
+      -moz-transform: rotate(360deg) ;
+      -o-transform: rotate(360deg) ;
+      -ms-transform:rotate(360deg);
+      }
+      /* Sidebar Boxes
+      ----------------------------------------------- */
+      @media all {
+      .box {
+      background:#fff;
+      border: solid 2px #ffd4e9;
+      border-radius: 6px;
+      margin:0 0 15px;
+      padding:10px 0 0;
+      color:#666;
+      }
+      .box2 {
+      padding:0 13px 8px;
+      }
+      }
+      @media handheld {
+      .box {
+      background:#fff;
+      }
+      .box2 {
+      background:none;
+      }
+      }
+      .sidebar-title {
+      border-top: 2px solid mistyrose;
+      border-left: 2px solid mistyrose;
+      border-right: 2px solid mistyrose;
+      border-bottom: 6px solid mistyrose;
+      border-radius: 10px 10px 0px 0px;
+      margin:0;
+      text-align:center;
+      font-size:125%;
+      font-family:Schoolbell;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      line-height:1.5em;
+      background:url("https://1.bp.blogspot.com/-01WA7bv4nHE/YLMciV2qhZI/AAAAAAAADFI/CoekkZKXRi0oQAO5Wyl3En_y0xVD2ct2wCLcBGAsYHQ/s0/pinktitik.gif");
+      display:block;
+      padding:5px 10px 5px 19px;
+      color:#333;
+      }
+      .box ul {
+      margin:.5em 0 1.25em;
+      padding:0 0px;
+      list-style:none;
+      }
+      .box ul li {
+      background:url("http://i11.photobucket.com/albums/a168/evelynregly/minigifs/mini126.gif") no-repeat;
+      margin:0;
+      padding:0 0 3px 16px;
+      margin-bottom:3px;
+      border-bottom:1px dotted #eee;
+      line-height:1.4em;
+      }
+      .box p {
+      margin:0 0 .6em;
+      }
+      /* Jarak
+      ----------------------------------------------- */
+      #jaraknya {
+      clear:both;
+      margin:0;
+      padding:15px 0 0;
+      }
+      @media all {
+      #jaraknya div {
+      background:transparent;
+      padding:8px 0 0;
+      }
+      #jaraknya div div {
+      padding:0 15px 8px;
+      }
+      }
+      @media handheld {
+      #jaraknya div {
+      background:transparent;
+      }
+      #jaraknya div div {
+      background:none;
+      }
+      }
+  
+      /* Feeds
+      ----------------------------------------------- */
+      #blogfeeds {
+      }
+      #postfeeds {
+      padding:0 15px 0;
+      }
+      /* Other
+      ----------------------------------------------- */
+      ::-webkit-scrollbar { height:12px; width: 12px; background: #ffffff; } ::-webkit-scrollbar-thumb { background-color: #fc90c6; -moz-border-radius: 10px; border-radius: 10px; border: 1px solid #e384b3; }
+      #s-m-t-tooltip {
+      background: #ff80ce;
+      text-shadow: 2px 2px 3px #fff;
+      font-size: 9px;
+      line-height: 11px;
+      font-family: short stack;
+      letter-spacing: 2px;
+      color: #fff;
+      text-shadow: 0px 0px
+      text-align: center;
+      padding: 5px 10px 5px 10px;
+      display: block;
+      border-radius: 4px;
+      margin: 24px 14px 7px 12px;
+      }
+      .blogger-labels{padding-top:20px;}
+      .atasnya{
+      margin-top:-40px;background:none;border-left:50px double #ffd4e9;border-right:50px double #ffd4e9;width:650px;height:50px;
+      }
+      a.friendly{
+      font-size: 12px;
+      display:inline-block;
+      text-align:center;
+      width: 75px;
+      color: #aaa;
+      border: 1px dashed pink;
+      border-radius: 20px 8px 20px 8px;
+      padding:3px;
+      margin:2px;
+      text-decoration: none;
+      transition:0.4s;
+      }
+      a.friendly:hover{
+      background:pink;
+      color:#fff;
+      text-shadow:none;
+      }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="//static.tumblr.com/7qjmkr5/IUmmdsy41/jquery.style-my-tooltips.js" type="text/javascript"></script>
+    <script>
+      (function($){
+          $(document).ready(function(){
+              $("[title]").style_my_tooltips();
+          });
+      })(jQuery);
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Short+Stack&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <center>
+      <div class="atasnya"></div>
+    </center>
+    <!-- Begin #content - Centers all content and provides edges for floated columns -->
+    <div id="content">
+    <!-- Blog Header -->
+    <div id="header">
+      <div>
+        <h1 id="blog-title">
+          <a href="<$BlogURL$>">
+            <center>
+              <!-- Ganti alamat gambar dengan alamat gambar header kamu sendiri -->
+              <img src='https://1.bp.blogspot.com/-vLjWkCmhjx0/YLJG7Pu5rnI/AAAAAAAADEc/gplLijs_Nd8snYUOluVedV1MDRldSXM7ACLcBGAsYHQ/s16000/Pinky%2BLand.png' width='500'/>
+            </center>
+            <ItemPage>
+          </a>
+          </ItemPage>
+        </h1>
+      </div>
+    </div>
+    <style>
+      /* Page menu  | Thanks to Anugerah Salsabella | Modified by Nayla Danish */
+      .bgmanu ul{background:url(https://1.bp.blogspot.com/-oup_adI5N9g/YLI5aLs0viI/AAAAAAAADEU/ki1c5vqDXgIWaJMMII9XtsUJPcK9a4HNACLcBGAsYHQ/s100/pinkpattern.png);padding:7px;border:1px dashed pink;border-radius:6px;text-align:center;color:#555;}
+      .bgmanu p{padding:5px;text-align:left;width:250px;color:#555;}
+      a.pinka{
+      padding:6px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      cursor:pointer;background:#fff;
+      text-decoration:none; 
+      border:1px solid pink;
+      border-bottom: 5px solid pink;
+      border-radius:5px;
+      color:#555; 
+      display:inline-block;
+      text-align:center;
+      }
+      a.pinka:hover{background:#fff6f5;color:#fc90c6;text-shadow:none;}
+    </style>
+    <br/>
+    <div id="bgmanu" class="bgmanu">
+      <ul>
+        <a class="pinka" onclick="document.getElementById('wnsb').innerHTML=document.getElementById('Posty').innerHTML" title="Back to entry">Entry</a> 
+        <a class="pinka" onclick="document.getElementById('wnsb').innerHTML=document.getElementById('About').innerHTML" title="About me!">About</a> 
+        <a class="pinka" onclick="document.getElementById('wnsb').innerHTML=document.getElementById('Friends').innerHTML" title="List my friends">Friends</a> 
+        <a class="pinka" onclick="document.getElementById('wnsb').innerHTML=document.getElementById('Sitemap').innerHTML" title="My article(s)">Stuff</a>
+        <ItemPage>
+          <a class="pinka" href="<$NewerPosts$>" title="Newer post">Newer</a>
+          <a class="pinka" href="<$OlderPosts$>" title="Older post">Older</a>
+        </ItemPage>
+        <a class="pinka" href="http://www.blogger.com/follow-blog.g?blogID=<$BlogID$>" target="_blank" title="Let's follow my blog">Follow</a>
+      </ul>
+      <div id="Home" style="display: none;"></div>
+      <div id="About" style="display: none;">
+        <div class="page">
+          <div class="post-page">
+            <h3 class="sometitle">About Me</h3>
+            <br/>
+            <center><img src="https://1.bp.blogspot.com/-K157iTS3Xtc/YLTZB9xDqAI/AAAAAAAADIw/3yBqDEPQM_k8CpZDVOuOSq2suCb1_Hd1QCLcBGAsYHQ/s500/about.gif" width="350"/></center>
+            <br/>
+            Hello,let's get acquainted with me... :3<br/><br/>
+            <h3>Biodata</h3>
+            <ul>
+              <li>Name: YOUR NAME,just call me YOUR NICKNAME</li>
+              <li>Date of birth: CITY,DAY MONTH YEAR</li>
+              <li>Age: AGE</li>
+              <li>Location : CITY,PROVINCE,COUNTRY</li>
+              <li>Hobby: HOBBY</li>
+            </ul>
+            <h3>I like</h3>
+            <ul>
+              <li>WHAT DO YOU LIKE</li>
+              <li>WHAT DO YOU LIKE</li>
+              <li>WHAT DO YOU LIKE</li>
+              <li>WHAT DO YOU LIKE</li>
+              <li>WHAT DO YOU LIKE</li>
+            </ul>
+            <h3>I do not like</h3>
+            <ul>
+              <li>WHAT YOU DON'T LIKE</li>
+              <li>WHAT YOU DON'T LIKE</li>
+              <li>WHAT YOU DON'T LIKE</li>
+              <li>WHAT YOU DON'T LIKE</li>
+              <li>WHAT YOU DON'T LIKE</li>
+            </ul>
+            <br/>
+            <h3>Quote</h3>
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </blockquote>
+          </div>
+        </div>
+        <div id="Friends" style="display: none;">
+          <div class="page">
+            <div class="post-page">
+              <h3 class="sometitle">Friends</h3>
+              <br/>
+              <center>
+                <img src="https://1.bp.blogspot.com/-oaT4qM5CyJc/YLTZKN4ikTI/AAAAAAAADI0/NkyWntS-gJw_pQ4j0yZ_Y1HNfqzQcz80wCLcBGAsYHQ/s500/friends.gif" width="350"/>
+              </center>
+              <br/>
+              Here is a list of my friends' themes ... if you want to entered the list.Tell me in comment or chat box.<br/>
+              <br/><br/><br/>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+              <a class="friendly" href="BLOG URL">Name</a>
+            </div>
+          </div>
+        </div>
+        <div id="Sitemap" style="display: none;">
+          <div class="page">
+            <div class="post-page">
+              <h3 class="sometitle">Stuff</h3>
+              <br/>
+              <center><img src="https://1.bp.blogspot.com/-EtKmSeqdbos/YLTZU6geCUI/AAAAAAAADI8/l_TItUJ9GqoqXHvxAW07wFDtRB-iGbgzQCLcBGAsYHQ/s700/Stuff.gif" width="350"/></center>
+              <br/>
+              <h3>CATEGORY 1</h3>
+              <ul>
+                <li><a href="URL POST">POST NAME</a></li>
+                <li><a href="URL POST">POST NAME</a></li>
+                <li><a href="URL POST">POST NAME</a></li>
+                <li><a href="URL POST">POST NAME</a></li>
+              </ul>
+              <br/>
+              <h3>CATEGORY 2</h3>
+              <ul>
+                <li><a href="URL POST">POST NAME</a></li>
+                <li><a href="URL POST">POST NAME</a></li>
+                <li><a href="URL POST">POST NAME</a></li>
+                <li><a href="URL POST">POST NAME</a></li>
+              </ul>
+              <br/>
+              <h3>CATEGORY 3</h3>
+              <ul>
+                <li><a href="URL POST">POST NAME</a></li>
+                <li><a href="URL POST">POST NAME</a></li>
+                <li><a href="URL POST">POST NAME</a></li>
+                <li><a href="URL POST">POST NAME</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Begin #main - Contains main-column blog content -->
+    <div id="main">
+      <div id="main2">
+        <div id="main3">
+          <div id="wnsb">
+            <Blogger>
+              <BlogDateHeader>
+                <h2 class="date-header"><$BlogDateHeaderDate$></h2>
+              </BlogDateHeader>
+              <!-- Begin .post -->
+              <div class="post">
+                <a name="<$BlogItemNumber$>"></a>
+                <BlogItemTitle>
+                  <BlogItemUrl>
+                    <a href="<$BlogItemUrl$>" title="external link" class="title-link">
+                  </BlogItemUrl>
+                  <h3 class="post-title">
+                  <$BlogItemTitle$>
+                  </h3>
+                  <BlogItemUrl></a></BlogItemUrl>
+                </BlogItemTitle>
+                <p class="post-footer">
+                  <em><$I18NPostedByAuthorNickname$> | <a href="<$BlogItemPermalinkUrl$>" title="permanent link"><$BlogItemDateTime$></a></em> &nbsp;
+                  <BlogItemCommentsEnabled>
+                    <a class="comment-link" href="<$BlogItemCommentCreate$>"<$BlogItemCommentFormOnclick$>><span style="text-transform:lowercase"><$I18NNumComments$></span></a>
+                  </BlogItemCommentsEnabled>
+                </p>
+                <div class="post-body">
+                  <p>
+                    <$BlogItemBody$>
+                  </p>
+                </div>
+              </div>
+              <!-- End .post -->
+              <!-- Begin #comments -->
+              <ItemPage>
+                <div id="comments">
+                  <BlogItemCommentsEnabled>
+                    <a name="comments"></a>
+                    <h4><$I18NNumComments$>:</h4>
+                    <dl id="comments-block">
+                      <$CommentPager$>
+                      <BlogItemComments>
+                        <dt class="comment-data" id="<$BlogCommentAnchorName$>"><a name="<$BlogCommentAnchorName$>"></a> <$I18NCommentAuthorSaid$>
+                        </dt>
+                        <dd class="comment-body">
+                          <p><$BlogCommentBody$></p>
+                        </dd>
+                      </BlogItemComments>
+                      <$CommentPager$>
+                    </dl>
+                    <p class="comment-timestamp">
+                      <$BlogItemCreate$>
+                    </p>
+                  </BlogItemCommentsEnabled>
+                  <p style="padding-left:20px;">
+                    <center><a href="<$BlogURL$>"><img src="https://1.bp.blogspot.com/-dgvo9Ha9Ci0/YLUiAcorWFI/AAAAAAAADJg/0BCj46e1wIQ0kdGgJQpJzNS1e-jN9yktwCLcBGAsYHQ/s256/Home.png" width="35" title="Back to home"/></a>
+                    </center>
+                  </p>
+                </div>
+              </ItemPage>
+              <!-- End #comments -->
+            </Blogger>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End #main -->
+    <!-- Begin #sidebar -->
+    <div id="sidebar">
+      <!-- Begin .box -->
+      <div class="box">
+        <div class="box2">
+          <div class="box3">
+            <h2 class="sidebar-title">The Owner</h2>
+            <br/>
+            <div class="avatara">
+              <center>
+                <!-- use a square image -->
+                <img src="https://1.bp.blogspot.com/-KgWfskGaQJ8/YLM-74_8Z7I/AAAAAAAADFY/he8S58iAZsgd7pxodQxQVhgo5hoyXOyaQCLcBGAsYHQ/s781/profile.png" title="Owner name"/>
+              </center>
+              <br/> 
+              <p>Hi my name is <b>NAME</b>.Im love blogging and pink.Nice to meet you!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End .box -->
+      <!-- Begin .box -->
+      <div class="box">
+        <div class="box2">
+          <div class="box3">
+            <h2 class="sidebar-title">Search</h2>
+            <br/>
+            <form action="/search" method="get" style="display: inline;">
+              <div style="text-align: center;">
+                <input name="q" size="19"
+                  style="background: mistyrose; border: 1px solid pink;padding:4px;" type="text" value="Search" />
+                <input style="background: pink; border: 1px solid pink;color: #fff; font-weight: bold;padding:4px;" type="submit" value="Go" /><br />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- End .box -->
+      <!-- Begin .box -->
+      <div class="box">
+        <div class="box2">
+          <div class="box3">
+            <h2 class="sidebar-title">Archive</h2>
+            <br/>
+            <center>
+            <select style="width: 200px;background:#ffc7e8;padding:5px;border: dashed 2px #e6a5cb;" onChange="location.href=this.options[this.selectedIndex].value;">
+              <option value=''>Archive</option>
+              <BloggerArchives>
+                <option value="<$BlogArchiveURL$>"><$BlogArchiveName$></option>
+              </BloggerArchives>
+            </select>
+            <!--
+              <p>This is a paragraph of text that could go in the sidebar.</p>
+              
+              -->
+          </div>
+        </div>
+      </div>
+      <!-- End .box -->
+      <!-- Begin .box -->
+      <div class="box">
+        <div class="box2">
+          <div class="box3">
+            <h2 class="sidebar-title">Chat Cbox</h2>
+            <br/>
+            Put your cbox code,use width 210px...
+          </div>
+        </div>
+      </div>
+      <!-- End .box -->
+      <!-- Begin .box -->
+      <div class="box">
+        <div class="box2">
+          <div class="box3">
+            <h2 class="sidebar-title">Credits</h2>
+            <br/>
+            <center>
+              <img src="https://66.media.tumblr.com/7d5c04c9034e9f4633ed9909a41dfcd0/tumblr_pecprze6xt1wll16to2_r1_250.gifv" width="210"/>
+            </center>
+            <br/>
+            <hr/>
+            Blogskin by: <a href="https://naylaka.blogspot.com">Nayla Danish</a><br/>
+            From       : <a href="http://skinswaii.blogspot.com">Skinswaii</a><br/>
+            Baseskin   : Rounders<br/>
+            Image icon : <a href="http://tumblr.com">Tumblr</a>,<a href="http://anugerahsalsa.blogspot.com/">Anugerah Salsa</a>
+            <hr/>
+          </div>
+        </div>
+      </div>
+      <!-- End .box -->
+    </div>
+    <!-- End #sidebar -->
+    <div style='padding: 10px;'/>
+      <div id="jaraknya">
+        <div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End #content -->
+  </body>
+  <div id="Posty" style="display: none;">
+    <blogger>
+      <BlogDateHeader>
+        <h2 class="date-header"><$BlogDateHeaderDate$></h2>
+      </BlogDateHeader>
+      <!-- Begin .post -->
+      <div class="post">
+        <a name="<$BlogItemNumber$>"></a>
+        <BlogItemTitle>
+          <BlogItemUrl>
+            <a href="<$BlogItemUrl$>" title="external link" class="title-link">
+          </BlogItemUrl>
+          <h3 class="post-title">
+          <$BlogItemTitle$>
+          </h3>
+          <BlogItemUrl></a></BlogItemUrl>
+        </BlogItemTitle>
+        <p class="post-footer">
+          <em><$I18NPostedByAuthorNickname$> | <a href="<$BlogItemPermalinkUrl$>" title="permanent link"><$BlogItemDateTime$></a></em> &nbsp;
+          <BlogItemCommentsEnabled>
+            <a class="comment-link" href="<$BlogItemCommentCreate$>"<$BlogItemCommentFormOnclick$>><span style="text-transform:lowercase"><$I18NNumComments$></span></a>
+          </BlogItemCommentsEnabled>
+        </p>
+        <div class="post-body">
+          <p>
+            <$BlogItemBody$>
+          </p>
+        </div>
+      </div>
+      <!-- End .post -->
+      <!-- Begin #comments -->
+      <ItemPage>
+        <div id="comments">
+          <BlogItemCommentsEnabled>
+            <a name="comments"></a>
+            <h4><$I18NNumComments$>:</h4>
+            <dl id="comments-block">
+              <$CommentPager$>
+              <BlogItemComments>
+                <dt class="comment-data" id="<$BlogCommentAnchorName$>"><a name="<$BlogCommentAnchorName$>"></a> <$I18NCommentAuthorSaid$>
+                </dt>
+                <dd class="comment-body">
+                  <p><$BlogCommentBody$></p>
+                </dd>
+              </BlogItemComments>
+              <$CommentPager$>
+            </dl>
+            <p class="comment-timestamp">
+              <$BlogItemCreate$>
+            </p>
+          </BlogItemCommentsEnabled>
+          <p style="padding-left:20px;">
+                    <center><a href="<$BlogURL$>"><img src="https://1.bp.blogspot.com/-dgvo9Ha9Ci0/YLUiAcorWFI/AAAAAAAADJg/0BCj46e1wIQ0kdGgJQpJzNS1e-jN9yktwCLcBGAsYHQ/s256/Home.png" width="35" title="Back to home"/></a>
+                    </center>
+                  </p>
+        </div>
+      </ItemPage>
+      <!-- End #comments -->
+    </blogger>
+  </div>
+</html>
