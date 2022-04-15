@@ -1,5 +1,4 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- HAY,DON'T COPY MY BLOG OR YOUR BLOG WILL TAKEDOWNED -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="<$BlogLanguageDirection$>">
   <head>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
@@ -72,11 +71,10 @@
     <style type="text/css">
       /*
       -----------------------------------------------
-      Skin info - Please don't remove -
       Name:     Pinky Bloggie
       Date:     29 May 2021
-      By  :     Nayla Danish K (naylaka.blogspot.com)
-      Base:     Rounders (Blogger.com)
+      By  :     a12c3
+      Original: Rounders (Blogger.com)
       ----------------------------------------------- */
       body {
       background-image:url('http://2.bp.blogspot.com/-OCgRpsLgOI4/T__7XP91GuI/AAAAAAAAI68/XHEd2LAdpD8/s1600/pink.gif');
@@ -596,7 +594,7 @@
           <a href="<$BlogURL$>">
             <center>
               <!-- Ganti alamat gambar dengan alamat gambar header kamu sendiri -->
-              <img src='https://1.bp.blogspot.com/-vLjWkCmhjx0/YLJG7Pu5rnI/AAAAAAAADEc/gplLijs_Nd8snYUOluVedV1MDRldSXM7ACLcBGAsYHQ/s16000/Pinky%2BLand.png' width='500'/>
+              <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMSbgCKV1E8J3SynrGkdH0wjGXNaOM_U37D6AZUfivOdhFnAC2TMbPTN9TjCS61H1D_DDLJfIvdP91xhquHLlFDIyD9VT6HZIB_QzVyb-lTjvOcVhVBM3n0cpYD7OgXc4hbyWZ0Yq1KTZiwxhH9W6rkFXx2KGrOKqXgQccTtKqvqe0KOz8WcXDkMt7fw/s16000/2022_04_15_0kf_Kleki.png' width='530'/>
             </center>
             <ItemPage>
           </a>
@@ -647,7 +645,7 @@
             <br/>
             <center><img src="https://1.bp.blogspot.com/-K157iTS3Xtc/YLTZB9xDqAI/AAAAAAAADIw/3yBqDEPQM_k8CpZDVOuOSq2suCb1_Hd1QCLcBGAsYHQ/s500/about.gif" width="350"/></center>
             <br/>
-            Hello,let's get acquainted with me... :3<br/><br/>
+            Hello,blablabla<br/><br/>
             <h3>Biodata</h3>
             <ul>
               <li>Name: YOUR NAME,just call me YOUR NICKNAME</li>
@@ -832,7 +830,7 @@
                 <img src="https://1.bp.blogspot.com/-KgWfskGaQJ8/YLM-74_8Z7I/AAAAAAAADFY/he8S58iAZsgd7pxodQxQVhgo5hoyXOyaQCLcBGAsYHQ/s781/profile.png" title="Owner name"/>
               </center>
               <br/> 
-              <p>Hi my name is <b>NAME</b>.Im love blogging and pink.Nice to meet you!</p>
+              <p>Hi my name is <b>NAME</b>.I love blogging and pink.Nice to meet you!</p>
             </div>
           </div>
         </div>
@@ -862,7 +860,7 @@
             <h2 class="sidebar-title">Archive</h2>
             <br/>
             <center>
-            <select style="width: 200px;background:#ffc7e8;padding:5px;border: dashed 2px #e6a5cb;" onChange="location.href=this.options[this.selectedIndex].value;">
+            <select style="width: 200px;background:mistyrose;padding:5px;border:dashed 2px pink;" onChange="location.href=this.options[this.selectedIndex].value;">
               <option value=''>Archive</option>
               <BloggerArchives>
                 <option value="<$BlogArchiveURL$>"><$BlogArchiveName$></option>
@@ -892,16 +890,10 @@
         <div class="box2">
           <div class="box3">
             <h2 class="sidebar-title">Credits</h2>
-            <br/>
-            <center>
-              <img src="https://66.media.tumblr.com/7d5c04c9034e9f4633ed9909a41dfcd0/tumblr_pecprze6xt1wll16to2_r1_250.gifv" width="210"/>
-            </center>
-            <br/>
             <hr/>
-            Blogskin by: <a href="https://naylaka.blogspot.com">Nayla Danish</a><br/>
-            From       : <a href="http://skinswaii.blogspot.com">Skinswaii</a><br/>
-            Baseskin   : Rounders<br/>
-            Image icon : <a href="http://tumblr.com">Tumblr</a>,<a href="http://anugerahsalsa.blogspot.com/">Anugerah Salsa</a>
+            Blogskin by: <a href="https://chichiruno.blogspot.com">a1b2c3</a><br/>
+            From       : <a href="http://blogsskinss.blogspot.com">BlogsSkinss</a><br/>
+            Original   : Rounders
             <hr/>
           </div>
         </div>
