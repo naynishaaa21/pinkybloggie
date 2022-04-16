@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="<$BlogLanguageDirection$>">
   <head>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-    <script type="text/javascript">
+   <script type="text/javascript">
       /***********************************************
       * Scroll To Top Control script- © Dynamic Drive DHTML code library(www.dynamicdrive.com)*
       ***********************************************/var scrolltotop={
@@ -73,7 +73,7 @@
       -----------------------------------------------
       Name:     Pinky Bloggie
       Date:     29 May 2021
-      By  :     a12c3
+      By  :     a1b2c3
       Original: Rounders (Blogger.com)
       ----------------------------------------------- */
       body {
@@ -530,15 +530,16 @@
       }
       /* Other
       ----------------------------------------------- */
-      ::-webkit-scrollbar { height:12px; width: 12px; background: #ffffff; } ::-webkit-scrollbar-thumb { background-color: #fc90c6; -moz-border-radius: 10px; border-radius: 10px; border: 1px solid #e384b3; }
+      ::-webkit-scrollbar { height:12px; width: 8px; background: #ffffff; } ::-webkit-scrollbar-thumb { background-color: #fc90c6; -moz-border-radius: 10px; border-radius: 10px; border: 1px solid #e384b3; }
       #s-m-t-tooltip {
-      background: #ff80ce;
+      background: white;
+      border: 2px solid #ff80ce;
       text-shadow: 2px 2px 3px #fff;
       font-size: 9px;
       line-height: 11px;
       font-family: short stack;
       letter-spacing: 2px;
-      color: #fff;
+      color: black;
       text-shadow: 0px 0px
       text-align: center;
       padding: 5px 10px 5px 10px;
@@ -561,7 +562,7 @@
       padding:3px;
       margin:2px;
       text-decoration: none;
-      transition:0.4s;
+      transition:0.8s;
       }
       a.friendly:hover{
       background:pink;
@@ -603,8 +604,7 @@
       </div>
     </div>
     <style>
-      /* Page menu  | Thanks to Anugerah Salsabella | Modified by Nayla Danish */
-      .bgmanu ul{background:url(https://1.bp.blogspot.com/-oup_adI5N9g/YLI5aLs0viI/AAAAAAAADEU/ki1c5vqDXgIWaJMMII9XtsUJPcK9a4HNACLcBGAsYHQ/s100/pinkpattern.png);padding:7px;border:1px dashed pink;border-radius:6px;text-align:center;color:#555;}
+      .bgmanu ul{background:url(https://1.bp.blogspot.com/-oup_adI5N9g/YLI5aLs0viI/AAAAAAAADEU/ki1c5vqDXgIWaJMMII9XtsUJPcK9a4HNACLcBGAsYHQ/s100/pinkpattern.png);padding:7px;border:1px solid pink;border-radius:6px;text-align:center;color:#555;}
       .bgmanu p{padding:5px;text-align:left;width:250px;color:#555;}
       a.pinka{
       padding:6px;
@@ -622,7 +622,7 @@
       display:inline-block;
       text-align:center;
       }
-      a.pinka:hover{background:#fff6f5;color:#fc90c6;text-shadow:none;}
+      a.pinka:hover{background:#fff6f5;color:#fc90c6;text-shadow:none;border-radius:10px;}
     </style>
     <br/>
     <div id="bgmanu" class="bgmanu">
@@ -635,7 +635,7 @@
           <a class="pinka" href="<$NewerPosts$>" title="Newer post">Newer</a>
           <a class="pinka" href="<$OlderPosts$>" title="Older post">Older</a>
         </ItemPage>
-        <a class="pinka" href="http://www.blogger.com/follow-blog.g?blogID=<$BlogID$>" target="_blank" title="Let's follow my blog">Follow</a>
+        <a class="pinka" href="http://www.blogger.com/follow-blog.g?blogID=<$BlogID$>" target="_blank" title="Follow my blog">Follow</a>
       </ul>
       <div id="Home" style="display: none;"></div>
       <div id="About" style="display: none;">
@@ -845,8 +845,8 @@
             <form action="/search" method="get" style="display: inline;">
               <div style="text-align: center;">
                 <input name="q" size="19"
-                  style="background: mistyrose; border: 1px solid pink;padding:4px;" type="text" value="Search" />
-                <input style="background: pink; border: 1px solid pink;color: #fff; font-weight: bold;padding:4px;" type="submit" value="Go" /><br />
+                  style="background: mistyrose; border: 1px solid pink;padding:4px;font-family:Short Stack;color:white" type="text" value="Search" />
+                <input style="background: pink; border: 1px solid pink;color: #fff; font-weight: bold;padding:4px;font-family:Short Stack;" type="submit" value="Go" /><br />
               </div>
             </form>
           </div>
@@ -860,7 +860,7 @@
             <h2 class="sidebar-title">Archive</h2>
             <br/>
             <center>
-            <select style="width: 200px;background:mistyrose;padding:5px;border:dashed 2px pink;" onChange="location.href=this.options[this.selectedIndex].value;">
+            <select style="width: 200px;background:mistyrose;padding:5px;border:dashed 2px pink;font-family:Short Stack;color:white" onChange="location.href=this.options[this.selectedIndex].value;">
               <option value=''>Archive</option>
               <BloggerArchives>
                 <option value="<$BlogArchiveURL$>"><$BlogArchiveName$></option>
